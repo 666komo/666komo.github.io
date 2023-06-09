@@ -1,1 +1,0 @@
-# 666komo.github.io
