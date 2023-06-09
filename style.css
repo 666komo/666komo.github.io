@@ -8,13 +8,11 @@
 
 #header{
 	color: #000000;
-	text-align: center;
 	width: 85%;
 	height: 100px;
 	margin: 15%;
 	padding: 35px 0;
-	align-items: baseline;
-	display: inline;
+	display: flex;
 }
 
 
