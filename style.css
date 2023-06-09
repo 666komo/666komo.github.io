@@ -8,12 +8,40 @@
 
 #header{
 	color: #000000;
+	text-align: center;
 	width: 85%;
 	height: 100px;
-	margin: 15%;
-	padding: 35px 0;
+	margin: auto;
 	display: flex;
+	padding: 35px 0;
+	align-items: center;
+	justify-content: unset;
 }
 
+#logo{
+	align-content: left;
+	width: 200px;
+	cursor: pointer;
+	margin-left: 20px;
+	padding: 15px;
+	background-color: #424242;
+	border: 2px solid #fff;
+	border-radius: 15px;
+}
+
+#lr{
+	list-style: none;
+	align-content: right;
+	margin-left: 55%;
+}
+
+.link{
+	size: auto;
+	display: inline-block;
+	padding: 10px;
+	border: 2px solid #424242;
+	border-radius: 15px;
+	background: linear-gradient(56deg, rgba(221,0,233,1) 0%, rgba(0,212,255,1) 100%);
+}
 
 
