@@ -22,7 +22,7 @@
 	align-content: left;
 	width: 200px;
 	cursor: pointer;
-	margin-left: 20px;
+	margin: auto;
 	padding: 15px;
 	background-color: #424242;
 	border: 2px solid #fff;
@@ -32,7 +32,7 @@
 #lr{
 	list-style: none;
 	align-content: right;
-	margin-left: 55%;
+	margin: auto;
 }
 
 .link{
