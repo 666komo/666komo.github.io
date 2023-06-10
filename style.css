@@ -21,7 +21,7 @@
 
 #logo{
 	align-content: left;
-	width: 100px;
+	width: 20px;
 	cursor: pointer;
 	margin: 0px auto 0px 10%;
 	padding: 15px;
@@ -36,25 +36,21 @@
 }
 
 .link{
-	cursor: pointer;
-	color: white;
 	text-underline-position: none;
-	size: auto;
-	content-align: center;
+	position: relative;
+	z-index: 1;
 	margin: auto 4px auto 0px;
 	display: inline-block;
-	padding: 12px;
-	transition: 0.6s ease;
+	padding: 7px 12px;
+	transition: 0.6s ease-out;
 	border: 2px solid rgba(255,0,0,1);
 	border-radius: 20px;
 }
 
-.link:active,
-.link:visited{color: white;}
-
-.link:hover{ color: black; 
+.link:hover{
 	border: 2px solid rgba(255,0,0,1); 
-	border-radius: 20px; background: rgba(255, 0, 0, 1); 
+	border-radius: 20px; 
+	background: rgba(255, 0, 0, 1); 
 }
 
 .main{
