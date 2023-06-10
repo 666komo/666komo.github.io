@@ -36,6 +36,7 @@
 }
 
 .link{
+	cursor: pointer;
 	color: white;
 	text-underline-position: none;
 	size: auto;
@@ -51,11 +52,9 @@
 .link:active,
 .link:visited{color: white;}
 
-.link:hover{
-	color: black;
-	border: 2px solid rgba(255,0,0,1);
-	border-radius: 20px;
-	background: rgba(255, 0, 0, 1);
+.link:hover{ color: black; 
+	border: 2px solid rgba(255,0,0,1); 
+	border-radius: 20px; background: rgba(255, 0, 0, 1); 
 }
 
 .main{
