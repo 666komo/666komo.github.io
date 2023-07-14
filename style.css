@@ -19,15 +19,9 @@
 	justify-content: unset;
 }
 
-#logo{
-	align-content: left;
-	width: 20px;
-	cursor: pointer;
-	margin: 0px auto 0px 10%;
-	padding: 15px;
-	border: 0px solid #fff;
-	border-radius: 15px;
-}
+.sidebar{
+	display: inline-block;
+	margin: auto 20% auto 20% auto;
 
 #lr{
 	list-style: none;
@@ -52,48 +46,6 @@
 	border: 2px solid rgba(255,0,0,1); 
 	border-radius: 20px; 
 	background: rgba(255, 0, 0, 1); 
-}
-
-#main{
-	color: white;
-	width: 60%;
-	height: 40%;
-	text-align: center;
-	margin: 300px auto auto auto;
-	padding: 0;
-}
-
-.hing{
-	font-size: 40px;
-	padding: 30px 20px;
-	border-radius: 30px;
-	border: 5px solid red;
-}
-
-.par{
-	color: white;
-}
-
-#mainstats{
-	margin: 100px 250px;
-	border: 3px solid rgba(255, 0, 0, 1.0);
-	border-radius: 20px;
-	align-content: left;
-	background: #121212;
-}
-
-.hingstats{
-	font-size: 26px;
-	padding: 10px 0px 0px 10px;
-	font-style: italic;
-	color: white;
-
-}
-
-.parstats{
-	font-size: 18px;
-	color: white;
-	padding: 10px;
 }
 
 #background{
