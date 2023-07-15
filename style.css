@@ -1,59 +1,36 @@
 *{
 	font-family: monospace;
 	font-weight: Bold;
-	padding: 0;
-	margin: 0;
 	text-decoration: none;
 }
 
-#header{
-	color: #000000;
-	background-color: linear-gradient(rgba(0,0,0,0.77) 0%,rgba(0,0,0,0.77) 100%);
-	text-align: center;
-	width: 100%;
-	height: 40px;
-	margin: auto;
-	display: flex;
-	padding: 35px 0;
-	align-items: center;
-	justify-content: unset;
+body{
+	background: #241E44;
 }
 
-.sidebar{
-	display: inline-block;
-	margin: auto 20% auto 20% auto;
+main{
+	width: 70%;
+	margin: auto 15%;
+	align-content: inline-block;
+}
 
-#lr{
-	list-style: none;
-	align-content: right;
-	margin: 10px 10% 10px 0px;
+#sidebar{
+	margin-right: 10%;
+}
+
+#content{
+	margin: auto;
+}
+
+#sidebar{
+	align-content: stretch;
 }
 
 .link{
-	font-size: 16px;
-	text-underline-position: none;
-	position: relative;
-	z-index: 1;
-	margin: auto 4px auto 0px;
-	display: inline-block;
-	padding: 7px 12px;
-	transition: 0.3s ease-out;
-	border: 2px solid rgba(255,0,0,1);
-	border-radius: 20px;
+	padding: 20px 40px;
+	border: 3px solid #000;
+	border-radius: 25%;
+	background: linear-gradient(164deg, rgba(14,0,36,1) 0%, rgba(102,9,121,1) 35%, rgba(0,212,255,1) 100%);
+	margin: 20px;
 }
-
-.link:hover{
-	border: 2px solid rgba(255,0,0,1); 
-	border-radius: 20px; 
-	background: rgba(255, 0, 0, 1); 
-}
-
-#background{
-	max-width: 100%;
-	height: 100vh;
-	background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(./images/background.png);
-	background-position: center;
-	background-size: cover;	
-}
-
 
