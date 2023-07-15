@@ -23,6 +23,8 @@ main{
 }
 
 #sidebar{
+	width: 25%;
+	text-align: left;
 	align-content: stretch;
 }
 
