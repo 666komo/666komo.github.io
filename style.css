@@ -26,6 +26,8 @@ main{
 	font-size: 30px;
 	width: 15%;
 	text-align: left;
+	margin-top: auto;
+	margin-bottom: auto;
 	align-content: stretch;
 }
 
