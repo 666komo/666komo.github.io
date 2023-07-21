@@ -1,0 +1,43 @@
+*{
+	font-family: monospace;
+	font-weight: Bold;
+	text-decoration: none;
+}
+
+body{
+	background: #241E44;
+}
+
+main{
+	width: 70%;
+	margin: auto 15%;
+	align-content: inline-block;
+}
+
+#sidebar{
+	margin-right: 10%;
+}
+
+#content{
+	margin: auto;
+}
+
+#sidebar{
+	font-size: 30px;
+	width: 15%;
+	text-align: left;
+	margin-top: auto;
+	margin-bottom: auto;
+	align-content: stretch;
+}
+
+.link{
+	padding: 20px 40px;
+	border: 0px solid #000;
+	border-radius: 25px;
+	background: linear-gradient(164deg, rgba(14,0,36,1) 0%, rgba(102,9,121,1) 35%, rgba(0,212,255,1) 100%);
+	margin: 20px;
+	text-align: center;
+	box-shadow: 3px black;
+}
+
