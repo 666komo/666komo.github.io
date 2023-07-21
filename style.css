@@ -4,6 +4,11 @@
 	text-decoration: none;
 }
 
+@keyframes example {
+	from {background: #000}
+	to {background: linear-gradient(164deg, rgba(14,0,36,1) 0%, rgba(102,9,121,1) 35%, rgba(0,212,255,1) 100%);}
+}
+
 body{
 	background: #241E44;
 }
@@ -15,7 +20,7 @@ main{
 }
 
 #sidebar{
-	margin-right: 10%;
+	margin-right: 10%; 
 }
 
 #content{
@@ -35,13 +40,14 @@ main{
 	padding: 20px 40px;
 	border: 0px solid #000;
 	background: #000000;
+	border-radius: 25px;
 	margin: 20px;
 	text-align: center;
 	box-shadow: 3px #000;
 }
 
 .link:hover{
-	border-radius: 25px;
+	border-color: ;
 	background: linear-gradient(164deg, rgba(14,0,36,1) 0%, rgba(102,9,121,1) 35%, rgba(0,212,255,1) 100%);
 }
 
