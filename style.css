@@ -28,8 +28,9 @@ main{
 }
 
 #sidebar{
+	max-width: 30%;
 	font-size: 30px;
-	width: 15%;
+	margin-right: auto;
 	text-align: left;
 	margin-top: auto;
 	margin-bottom: auto;
