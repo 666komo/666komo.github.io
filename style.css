@@ -4,7 +4,7 @@
 	text-decoration: none;
 }
 
-@keyframes example {
+@keyframes hoverlink {
 	from {background: #000}
 	to {background: linear-gradient(164deg, rgba(14,0,36,1) 0%, rgba(102,9,121,1) 35%, rgba(0,212,255,1) 100%);}
 }
@@ -47,7 +47,10 @@ main{
 }
 
 .link:hover{
-	border-color: ;
+	animation-name: hoverlink;
+	animation-duration: 2s;
+	animation-
+	border-color: 2px solid;
 	background: linear-gradient(164deg, rgba(14,0,36,1) 0%, rgba(102,9,121,1) 35%, rgba(0,212,255,1) 100%);
 }
 
