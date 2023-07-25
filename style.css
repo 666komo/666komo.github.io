@@ -19,10 +19,6 @@ main{
 	align-content: inline-block;
 }
 
-#sidebar{
-	margin-right: 10%; 
-}
-
 #content{
 	margin: auto;
 }
@@ -35,6 +31,8 @@ main{
 	margin-top: auto;
 	margin-bottom: auto;
 	align-content: stretch;
+	position: absolute;
+	top: 50%;
 }
 
 .link{
@@ -50,7 +48,6 @@ main{
 .link:hover{
 	animation-name: hoverlink;
 	animation-duration: 2s;
-	animation-
 	border-color: 2px solid;
 	background: linear-gradient(164deg, rgba(14,0,36,1) 0%, rgba(102,9,121,1) 35%, rgba(0,212,255,1) 100%);
 }
