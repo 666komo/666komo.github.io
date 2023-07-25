@@ -31,11 +31,10 @@ main{
 	margin-top: auto;
 	margin-bottom: auto;
 	align-content: stretch;
-	position: absolute;
-	top: 50%;
 }
 
 .link{
+	align-content: center;
 	padding: 20px 40px;
 	border: 0px solid #000;
 	background: #000000;
