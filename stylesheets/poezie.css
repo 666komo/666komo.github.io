@@ -53,3 +53,14 @@ p{
 .buttons a:hover{
     background-color: #75213a;
 }
+
+
+.content{
+    color: #fff;
+    height: 85%;
+    margin: 100px 20% 150px;
+    padding: 50px;
+    border-color: 3px solid #666666;
+    border-radius: 20px;
+    background: rgba(171,171,171,0.5);
+}

@@ -3,19 +3,19 @@
 <head>
     <title>Welcome</title>
     <link rel="stylesheet" type="text/css" href="./stylesheets/welcome.css">
-</head>
-<body>
-    <h2>Welcome</h2>
-    <?php
-    session_start();
-    if (isset($_SESSION["username"])) {
-        $username = $_SESSION["username"];
-        echo "<p>Welcome, $username!</p>";
-        echo '<a href="logout.php">Logout</a>';
-    } else {
-        header("Location: login.html");
-        exit;
-    }
-    ?>
-</body>
-</html>
+  </head>
+  <body>
+      <div class="navbar">
+          <div class="logo">
+              <img src="logo.jpg" alt="Your Logo">
+          </div>
+          <div class="buttons">
+              <a href="./welcome.html">Home</a>
+              <a href="./poezie.html">Poetry</a>
+              <a href="./imgs.html">Photos</a>
+              <a href="./about.html">About</a>
+          </div>
+      </div>
+      <h1>Welcome to Our Home Page</h1>
+  </body>
+  </html>
