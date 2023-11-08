@@ -1,27 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="./style.css">
-	<title>New Tab</title>
+    <title>Login</title>
 </head>
 <body>
-	<header>
-		
-	</header>
-	<main id="main">
-		<ul id="sidebar">
-			<li class="link"><a href="https://github.com/" style="color: #ffffff" target="_blank">GitHub</a></li>
-			<li class="link"><a href="https://www.instagram.com/" style="color: #ffffff" target="_blank">Instagram</a></li>
-			<li class="link"><a href="https://www.reddit.com/" style="color: #ffffff" target="_blank">Reddit</a></li>
-			<li class="link"><a href="https://duckduckgo.com/" style="color: #ffffff" target="_blank">DuckDuckGo</a></li>
-			<li class="link"><a href="https://archive.org/" style="color: #ffffff" target="_blank">Web Archive</a></li>
-		</ul>
-		<div id="content">
-				
-		</div>
-	</main>
-
+    <h2>Login</h2>
+    <form action="login.php" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        
+        <input type="submit" value="Login">
+    </form>
 </body>
 </html>
