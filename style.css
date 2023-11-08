@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 100px;
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+}
+
+.error {
+    color: red;
+}
