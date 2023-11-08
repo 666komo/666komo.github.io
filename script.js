@@ -6,8 +6,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Function to toggle password visibility
     showPasswordCheckbox.addEventListener("change", function () {
-        passwordField.type = showPasswordCheckbox.checked ? "text" : "password";
+        togglePasswordVisibility();
     });
+
+    function togglePasswordVisibility() {
+        passwordField.type = showPasswordCheckbox.checked ? "text" : "password";
+    }
 
     loginForm.addEventListener("submit", function (e) {
         e.preventDefault();
