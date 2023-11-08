@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit;
     } else {
         // Failed login
-        header("Location: login.html"); // Redirect back to the login screen
+        header("Location: index.html"); // Redirect back to the login screen
         exit;
     }
 }
