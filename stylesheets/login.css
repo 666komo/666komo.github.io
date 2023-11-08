@@ -5,8 +5,8 @@ body {
 }
 
 form {
-    display: inline-block;
-    text-align: left;
+    display: flex;
+    align-content: center;
 }
 
 .error {
