@@ -13,7 +13,6 @@ h1 {
 
 p{
     font-size: 24px;
-    height: auto;
 }
 
 .navbar {
@@ -55,7 +54,10 @@ p{
 }
 
 .content{
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
     margin: 100px;
     height: 70%;
     width: 100%;
@@ -64,8 +66,8 @@ p{
 #leftbox,
 #modbox,
 #rightbox{
-    display: inline-block;
     width: 250px;
+    height: 500px;
     background: rgba(190,190,190,0.5);
     border: 2px solid rgba(150,150,150,0.7);
     border-radius: 20px;
