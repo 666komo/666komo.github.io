@@ -67,18 +67,18 @@ p{
 #leftbox {
     float:left; 
     background:Red;
-    width:25%;
+    width:20%;
     height:350px;
 }
 #midbox{
     float:left; 
     background:Green;
-    width:50%;
+    width:40%;
     height:500px;
 }
 #rightbox{
     float:right;
     background:blue;
-    width:25%;
+    width:20%;
     height:350px;
 }
