@@ -70,7 +70,7 @@ p{
 
 #leftbox {
     float:left; 
-    max-width:150px;
+    max-width:200px;
     height:350px;
 }
 #midbox{
@@ -80,6 +80,6 @@ p{
 }
 #rightbox{
     float:right;
-    max-width:150px;
+    max-width:200px;
     height:350px;
 }
