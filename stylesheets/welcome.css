@@ -14,6 +14,10 @@ h1 {
 p{
     font-size: 24px;
     margin: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    background: rgba(41,41,41,0.7);
 }
 
 .navbar {
@@ -55,14 +59,8 @@ p{
 }
 
 .content{
-    display: flex;
+    display: inline-block;
     align-content: center;
     margin: 10px;
 }
 
-.block{
-    padding: 15px;
-    border-radius: 20px;
-    border: 2px solid #fff;
-    background: rgba(41,41,41,0.7);
-}
