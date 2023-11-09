@@ -61,7 +61,8 @@ p{
 }
 
 .content{
-    display: inline-table;
-    
+    width: auto;
+    display: inline-block;
+    justify-content: stretch;
 }
 
