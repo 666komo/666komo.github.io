@@ -56,29 +56,30 @@ p{
 
 .content{
     align-items: center;
+    margin 0px 10% 0px 10%;
 }
 
 #leftbox,
 #modbox,
 #rightbox{
     margin: 20px;
+    background: rgba(190,190,190,0.5);
+    border: 2px solid rgba(150,150,150,0.7);
+    border-radius: 20px;
 }
 
 #leftbox {
     float:left; 
-    background:Red;
     max-width:150px;
     height:350px;
 }
 #midbox{
     float:left; 
-    background:Green;
     max-width:600px;
     height:500px;
 }
 #rightbox{
     float:right;
-    background:blue;
     max-width:150px;
     height:350px;
 }
