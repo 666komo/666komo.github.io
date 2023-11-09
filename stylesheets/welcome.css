@@ -11,9 +11,8 @@ h1 {
     margin: 20px;
 }
 
-p{
-    font-size: 24px;
-}
+
+
 
 .navbar {
     height: 50px;
@@ -53,18 +52,20 @@ p{
     background-color: #75213a;
 }
 
-.content{
+#content{
     display: flex;
+    background-color: rgba(40,40,40,0);
+    align-content: center;
     justify-content: center;
-    align-items: center;
-    min-height: 400px;
-    margin: 100px;
 }
 
-.content p{
-    height: 600px;
-    width: 300px;
-    background: rgba(180,180,180,0.5);
-    border: 2px solid rgba(40,40,40,0.5);
-    border-radius: 20px;
+#content div{
+    background-color: rgba(40,40,40,0.2);
+    align-items: center;
+    margin: 100px;
+    width: 100%;
+}
+
+p{
+    font-size: 24px;
 }
