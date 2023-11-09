@@ -60,9 +60,6 @@ p{
 }
 
 .content{
-    display: inline-flex;
-    align-content: center;
-    vertical-align: center;
-    margin: 10px;
+    display: inline-block;
 }
 
