@@ -58,6 +58,12 @@ p{
     align-items: center;
 }
 
+#leftbox,
+#modbox,
+#rightbox{
+    margin: 20px;
+}
+
 #leftbox {
     float:left; 
     background:Red;
