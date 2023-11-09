@@ -14,7 +14,7 @@ h1 {
 p{
     font-size: 24px;
     height: 40%;
-    max-width: 400px;
+    max-width: 25%;
     padding: 30px;
     border-radius: 20px;
     margin: 30px;
@@ -66,3 +66,14 @@ p{
     justify-content: stretch;
 }
 
+#l{
+    float: left;
+}
+
+#c{
+    float: inherit;
+}
+
+#r{
+    float: right;
+}
