@@ -55,31 +55,26 @@ p{
 }
 
 .content{
-    align-items: center;
-    margin 0px 10% 0px 10%;
+    margin: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
 }
 
 #leftbox,
 #modbox,
 #rightbox{
-    margin: 20px;
     background: rgba(190,190,190,0.5);
     border: 2px solid rgba(150,150,150,0.7);
     border-radius: 20px;
 }
 
 #leftbox {
-    float:left; 
-    max-width:200px;
-    height:350px;
+
 }
 #midbox{
-    float:left; 
-    max-width:600px;
-    height:500px;
+    
 }
 #rightbox{
-    float:right;
-    max-width:200px;
-    height:350px;
+    
 }
