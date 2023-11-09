@@ -55,6 +55,7 @@ p{
 }
 
 .content{
+    display: inline-block;
     align-items: center;
 }
 
@@ -62,17 +63,17 @@ p{
     float:left; 
     background:Red;
     width:25%;
-    height:280px;
+    height:350px;
 }
 #middlebox{
     float:left; 
     background:Green;
     width:50%;
-    height:280px;
+    height:500px;
 }
 #rightbox{
     float:right;
     background:blue;
     width:25%;
-    height:280px;
+    height:350px;
 }
