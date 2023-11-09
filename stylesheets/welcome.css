@@ -12,6 +12,7 @@ h1 {
 }
 
 p{
+    display: inline-block;
     font-size: 24px;
     height: 40%;
     max-width: 25%;
@@ -61,19 +62,8 @@ p{
 }
 
 .content{
-    width: 100%;
-    display: inline-block;
-    justify-content: stretch;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#l{
-    float: left;
-}
-
-#c{
-    float: inherit;
-}
-
-#r{
-    float: right;
-}
