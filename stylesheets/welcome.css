@@ -56,14 +56,14 @@ p{
 
 .content{
     margin: 100px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 50px;
+    height: 70%;
+    width: 100%;
 }
 
 #leftbox,
 #modbox,
 #rightbox{
+    display: inline-block;
     background: rgba(190,190,190,0.5);
     border: 2px solid rgba(150,150,150,0.7);
     border-radius: 20px;
@@ -73,7 +73,7 @@ p{
 
 }
 #midbox{
-    
+
 }
 #rightbox{
     
