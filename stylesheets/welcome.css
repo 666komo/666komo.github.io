@@ -59,26 +59,12 @@ p{
     align-items: center;
     min-height: 400px;
     margin: 100px;
-    height: 70%;
-    width: 100%;
 }
 
-#leftbox,
-#modbox,
-#rightbox{
-    width: 250px;
-    height: 500px;
-    background: rgba(190,190,190,0.5);
-    border: 2px solid rgba(150,150,150,0.7);
+.content p{
+    height: 600px;
+    width: 300px;
+    background: rgba(180,180,180,0.5);
+    border: 2px solid rgba(40,40,40,0.5);
     border-radius: 20px;
-}
-
-#leftbox {
-
-}
-#midbox{
-
-}
-#rightbox{
-    
 }
