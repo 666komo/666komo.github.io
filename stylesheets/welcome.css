@@ -53,3 +53,17 @@ p{
 .buttons a:hover{
     background-color: #75213a;
 }
+
+.content{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.block{
+    padding: 15px;
+    border-radius: 20px;
+    display: block;
+    border: 2px solid #fff;
+    background: rgba(41,41,41,0.7);
+}
