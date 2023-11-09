@@ -12,15 +12,8 @@ h1 {
 }
 
 p{
-    display: inline-block;
     font-size: 24px;
-    height: 40%;
-    max-width: 25%;
-    padding: 30px;
-    border-radius: 20px;
-    margin: 30px;
-    border: 2px solid #fff;
-    background: rgba(41,41,41,0.7);
+    height: auto;
 }
 
 .navbar {
@@ -67,3 +60,21 @@ p{
     align-items: center;
 }
 
+#leftbox {
+    float:left; 
+    background:Red;
+    width:25%;
+    height:280px;
+}
+#middlebox{
+    float:left; 
+    background:Green;
+    width:50%;
+    height:280px;
+}
+#rightbox{
+    float:right;
+    background:blue;
+    width:25%;
+    height:280px;
+}
