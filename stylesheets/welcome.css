@@ -55,6 +55,7 @@ p{
 }
 
 .content{
+    display: inline-block;
     margin: 100px;
     height: 70%;
     width: 100%;
