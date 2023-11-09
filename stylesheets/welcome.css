@@ -17,6 +17,7 @@ p{
     height: 40%;
     padding: 15px;
     border-radius: 20px;
+    margin: 30px;
     border: 2px solid #fff;
     background: rgba(41,41,41,0.7);
 }
@@ -63,6 +64,5 @@ p{
     display: inline-block;
     align-content: center;
     margin: 10px;
-    justify-content: space-evenly;
 }
 
