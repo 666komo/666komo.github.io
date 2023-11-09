@@ -60,7 +60,7 @@ p{
 }
 
 .content{
-    display: inline;
+    display: inline-flex;
     align-content: center;
     margin: 10px;
 }
