@@ -1,0 +1,53 @@
+:root{
+    font-family: "SF Pro Display", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #fff;
+}
+
+body{
+    background-color: #14171c;
+    min-height: 100%;
+    display: block;
+    justify-content: center;
+}
+
+#content{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 80px;
+}
+
+#mainbox{
+    height: 75.5vh;
+    background-color: #1c2129;
+    border: 3px solid #434549;
+    border-radius: 15px;
+    box-shadow: 4px 4px 6px #000000 !important;
+    width: 1200px;
+    margin-right: 40px;
+    display: grid;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+hr{
+    min-width: 100%;
+    color: #434549;
+}
+
+p{
+    font-size: 20px;
+}
+
+#title{
+    min-height: 5.5vh;
+    text-align: left;
+    margin: 15px 0 -15px 15px;
+}
+
+.box{
+    margin: 0 200px;
+    min-height: 35vh;
+}

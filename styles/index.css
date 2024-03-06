@@ -1,0 +1,49 @@
+:root{
+    font-family: "SF Pro Display", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #fff;
+}
+
+body{
+    background-color: #14171c;
+    min-height: 100%;
+    display: block;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#mainbox{
+    margin: 200px auto;
+    background-color: #1c2129;
+    border-radius: 10px;
+    border: 2px solid #434549;
+    padding: 20px;
+    height: 600px !important;
+    width: 900px !important;
+    display: grid;
+    align-content: center;
+    text-align: center;
+    box-shadow: 4px 4px 6px #000000 !important;
+}
+
+hr{
+    width: 200px !important;
+}
+
+i{
+    width: 80px !important;
+    height: 80px !important;
+    background-color: #14171c;
+    border-radius: 10px;
+    border: 3px solid #434549;
+    margin-top: 20px;
+    transition: 0.5s;
+    box-shadow: 2px 2px 4px #000000 !important;
+    color: #01a1ee;
+}
+
+i:hover{
+    background-color: #434549;
+}

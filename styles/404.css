@@ -1,0 +1,40 @@
+:root{
+    font-family: "SF Pro Display", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #fff;
+}
+
+body{
+    background-color: #14171c;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#status{
+    margin: 15%;
+    width: 300px;
+    height: 200px;
+    display: grid;
+    padding: 40px;
+    padding-bottom: 60px;
+    justify-content: center;
+    background-color: #1c2129;
+    border: 3px solid #434549;
+}
+
+h1{
+    font-size: 50px;
+}
+
+hr{
+    max-height: 1px;
+    width: 200px;
+}
+
+p{
+    margin: 30px
+}

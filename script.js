@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const password = passwordField.value;
 
         // Perform simple username and password validation
-        if (username === "pwalker" && password === "skyline") {
+        if (username === "tester" && password === "noc1scohere") {
             // Successful login
             window.location.href = "welcome.html";
         } else {

@@ -1,0 +1,63 @@
+:root{
+    font-family: "SF Pro Display", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #fff;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #232a3588;
+    border: 3px solid #434549 !important;
+    border-radius: 15px;
+    min-height: 70px;
+    box-shadow: 4px 4px 6px #000000 !important;
+}
+
+#logo{
+    max-height: 60px;
+    margin: auto;
+    margin-left: 10px;
+}
+
+#navigation{
+    margin-right: 10px;
+}
+
+.link{
+    text-decoration: none;
+    margin: 30px 10px 30px 0;
+    padding: 5px 10px;
+    border: 3px solid #434549 !important;
+    border-radius: 10px;
+    background-color: #434549;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.link:hover{
+    background-color: transparent;
+    border: 3px solid #434549;
+    padding: 8px 10px;
+}
+
+#linkactive{
+    background-color: #43454950;
+    border: 3px solid #591d32;
+    padding: 5px 10px;
+    color: #fff;
+    text-decoration: none;
+    margin: 30px 10px 30px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+#linkactive:hover{
+    background-color: #591d3299;
+    border: 3px solid #434549;
+    padding: 8px 10px;
+}

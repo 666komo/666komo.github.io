@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="cs">
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./styles/nav.css">
+    <link rel="stylesheet" type="text/css" href="./styles/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -9,26 +11,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="./styles/login.css">
+    <title>Forum | TuxForum</title>
 </head>
 <body>
-    <h2>Login</h2>
-    <form id="login-form">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
+<div id="navbar">
+    <img src="img/logo.png" alt="logo" id="logo">
+    <div id="navigation">
+        <a href="./welcome.html" class="link">Home</a>
+        <a href="./info.html" id="linkactive">Info</a>
+        <a href="./team.html" class="link">Team</a>
+        <a href="./contact.html" class="link">Contact</a>
+    </div>
+</div>
+<div id="body">
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-
-        <div class="sp">
-          <input type="checkbox" id="show-password">
-          <label for="show-password">Show Password</label>
-        </div>
-
-        <button type="submit">Login</button>
-    </form>
-    <p id="error-message" class="error"></p>
-    <script src="script.js"></script>
+</div>
 </body>
 </html>
