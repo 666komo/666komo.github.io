@@ -1,26 +1,27 @@
-:root{
+:root {
     font-family: "SF Pro Display", sans-serif;
     font-weight: 300;
     font-style: normal;
     color: #fff;
 }
 
-body{
+body {
     background-color: #14171c;
     min-height: 100%;
     display: block;
     justify-content: center;
     align-content: center;
     align-items: center;
+    margin-left: 200px; /* Ensures the main content stays next to the navbar */
 }
 
-#mainbox{
-    margin: 200px auto;
+#mainbox {
+    margin: 8vh auto;
     background-color: #1c2129;
     border-radius: 10px;
     border: 2px solid #434549;
     padding: 20px;
-    height: 600px !important;
+    height: 80vh !important;
     width: 900px !important;
     display: grid;
     align-content: center;
@@ -28,11 +29,12 @@ body{
     box-shadow: 4px 4px 6px #000000 !important;
 }
 
-hr{
+/* Other styles for content area */
+hr {
     width: 200px !important;
 }
 
-i{
+i {
     width: 80px !important;
     height: 80px !important;
     background-color: #14171c;
@@ -44,6 +46,22 @@ i{
     color: #01a1ee;
 }
 
-i:hover{
+i:hover {
     background-color: #434549;
+}
+
+.li{
+    max-width: 10vh;
+    background-color: #434549;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 3px solid #434549;
+    transition: all 0.3s ease;
+}
+
+.li:hover{
+    background-color: #575757;
 }
