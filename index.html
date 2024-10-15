@@ -1,41 +1,53 @@
 <!DOCTYPE html>
-<html lang="cz">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | KOMO's Dungeon</title>
-    <link rel="stylesheet" href="styles/nav.css">
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-</head>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home | KOMO's Dungeon</title>
+        <link rel="stylesheet" href="styles/nav.css">
+        <link rel="stylesheet" href="styles/index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
 <body>
-    <div id="navbar">
+    <!-- Navbar Section -->
+    <nav id="navbar">
         <div id="logo-container">
-            <a href="index.html"><img id="logo" src="./img/download.jpg" alt="logoimg"></a>
+            <img src="assets/download.jpg" alt="Logo" id="logo">
         </div>
         <div id="stitle">
-            <h1>KOMO's<br>Dungeon</h1>
+            <h1>KOMO's Dungeon</h1>
         </div>
         <div class="dropdown">
             <button class="dropbtn">Menu</button>
             <div class="dropdown-content">
-                <a href="index.html" id="linkactive">Home</a>
-                <a href="_linux/linux.html" class="link">Linux</a>
-                <a href="_windows/windows.html" class="link">Windows</a>
-                <a href="_android/android.html" class="link">Android</a>
+                <a href="#">Home</a>
+                <a href="#">Linux</a>
+                <a href="#">Windows</a>
+                <a href="#">Android</a>
             </div>
         </div>
-    </div>
-    <div id="mainbox">
-        <h2>Welcome to my dungeon!</h2>
-        <p>This website is supposed to be my cheatsheet only for me.<br>So the fact that it's released to publick is pretty much pointless.</p>
-        <p>I'm fuckin broke picus.<br>I dunno what to do with my life.<br>Anyway, because I'm broke, this website is entirely hosted on github.<br>Link is below.</p>
-        <a href="https://github.com" class="li" onmouseover="alert('scary alerto hahhahahahha... im just bored')">Git</a>
-    </div>
+    </nav>
+
+    <!-- Content Section -->
+    <section id="content">
+        <div id="mainbox">
+            <h1>Welcome to my dungeon!</h1>
+            <p>
+                This website is supposed to be my cheatsheet only for me.<br>
+                So the fact that it's released to the public is pretty much pointless.<br>
+                I'm broke.<br><br>
+                Anyway, because I'm broke, this website is entirely hosted on GitHub.<br>
+                Link is below.
+            </p>
+            <a href="https://github.com/666komo/666komo.github.io" class="li">GitHub</a>
+        </div>
+    </section>
 </body>
 </html>
