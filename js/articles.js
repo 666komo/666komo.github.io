@@ -33,20 +33,29 @@ document.getElementById('add-article-form').onsubmit = function(event) {
     // Create a new FileReader to read the image file
     const reader = new FileReader();
     reader.onload = function(e) {
-        const newArticle = document.createElement('div');
-        newArticle.className = 'article-window';
-        
-        newArticle.innerHTML = `
+        const newArticleHTML = `
+        <div class="article-window">
             <img src="${e.target.result}" alt="Article Image">
             <div class="article-info">
                 <h2>${title}</h2>
                 <p class="description">${description}</p>
             </div>
+        </div>
         `;
 
-        // Append the new article to the content section
-        document.getElementById('content').appendChild(newArticle);
-        
+        // Inject the new article HTML into the content section
+        const contentSection = document.getElementById('content');
+        contentSection.insertAdjacentHTML('beforeend', newArticleHTML);
+
+        // Store the new article data in localStorage
+        let articles = JSON.parse(localStorage.getItem('articles')) || [];
+        articles.push({
+            title: title,
+            description: description,
+            image: e.target.result
+        });
+        localStorage.setItem('articles', JSON.stringify(articles));
+
         // Reset the form and close the modal
         document.getElementById('add-article-form').reset();
         modal.style.display = 'none';
@@ -55,3 +64,22 @@ document.getElementById('add-article-form').onsubmit = function(event) {
     // Read the image file as a Data URL
     reader.readAsDataURL(imageFile);
 }
+
+// Load articles from localStorage on page load
+window.addEventListener('load', function() {
+    const articles = JSON.parse(localStorage.getItem('articles')) || [];
+    const contentSection = document.getElementById('content');
+
+    articles.forEach(article => {
+        const articleHTML = `
+        <div class="article-window">
+            <img src="${article.image}" alt="Article Image">
+            <div class="article-info">
+                <h2>${article.title}</h2>
+                <p class="description">${article.description}</p>
+            </div>
+        </div>
+        `;
+        contentSection.insertAdjacentHTML('beforeend', articleHTML);
+    });
+});
