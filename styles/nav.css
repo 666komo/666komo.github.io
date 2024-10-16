@@ -142,3 +142,20 @@
 .link:hover {
     background-color: #575757;
 }
+
+#add-article-btn{
+    background-color: #434549;
+    color: white;
+    padding: 15px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 5px;
+}
+
+.add-article-btn:hover {
+    background-color: #575757;
+    transform: scale(1.05);
+}
