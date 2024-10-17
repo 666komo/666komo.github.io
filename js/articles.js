@@ -1,85 +1,80 @@
-document.querySelectorAll('.article-window').forEach(article => {
-    article.addEventListener('click', function() {
-        this.classList.toggle('active');
-    });
-});
+// Get DOM elements
+const addArticleForm = document.getElementById('add-article-form');
+const articleTitleInput = document.getElementById('article-title');
+const articleDescriptionInput = document.getElementById('article-description');
+const articleImageInput = document.getElementById('article-image');
+const articleCategoryInput = document.getElementById('article-category');
 
-// Add Article Modal Functionality
-const modal = document.getElementById('add-article-modal');
-const addArticleBtn = document.getElementById('add-article-btn');
-const closeModal = document.querySelector('.close');
+// Function to handle form submission
+function handleSubmit(event) {
+    event.preventDefault();
+    const title = articleTitleInput.value.trim();
+    const description = articleDescriptionInput.value.trim();
+    const imageFile = articleImageInput.files[0];
+    const category = articleCategoryInput.value;
 
-addArticleBtn.onclick = function() {
-    modal.style.display = 'block';
-}
+    if (title && description && imageFile && category) {
+        // Create a new article object
+        const newArticle = {
+            title: title,
+            description: description,
+            imageSrc: URL.createObjectURL(imageFile),
+            category: category
+        };
 
-closeModal.onclick = function() {
-    modal.style.display = 'none';
-}
+        // Get existing articles from localStorage or initialize an empty array
+        let articles = JSON.parse(localStorage.getItem('articles')) || [];
 
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = 'none';
+        // Add the new article to the array
+        articles.push(newArticle);
+
+        // Save the updated articles array to localStorage
+        localStorage.setItem('articles', JSON.stringify(articles));
+
+        // Clear the form
+        addArticleForm.reset();
+
+        // Optionally, provide feedback to the user
+        alert('Article added successfully!');
+
+        // Redirect to the appropriate category page
+        window.location.href = `../_${category}/${category}.html`;
+    } else {
+        alert('Please fill in all fields, select an image, and choose a category.');
     }
 }
 
-document.getElementById('add-article-form').onsubmit = function(event) {
-    event.preventDefault();
-    
-    const title = document.getElementById('article-title').value;
-    const description = document.getElementById('article-description').value;
-    const imageFile = document.getElementById('article-image').files[0];
+// Add event listener to the form
+addArticleForm.addEventListener('submit', handleSubmit);
 
-    // Create a new FileReader to read the image file
-    const reader = new FileReader();
-    reader.onload = function(e) {
-        const newArticleHTML = `
-        <div class="article-window">
-            <img src="${e.target.result}" alt="Article Image">
-            <div class="article-info">
-                <h2>${title}</h2>
-                <p class="description">${description}</p>
-            </div>
-        </div>
-        `;
-
-        // Inject the new article HTML into the content section
-        const contentSection = document.getElementById('content');
-        contentSection.insertAdjacentHTML('beforeend', newArticleHTML);
-
-        // Store the new article data in localStorage
-        let articles = JSON.parse(localStorage.getItem('articles')) || [];
-        articles.push({
-            title: title,
-            description: description,
-            image: e.target.result
-        });
-        localStorage.setItem('articles', JSON.stringify(articles));
-
-        // Reset the form and close the modal
-        document.getElementById('add-article-form').reset();
-        modal.style.display = 'none';
-    };
-    
-    // Read the image file as a Data URL
-    reader.readAsDataURL(imageFile);
-}
-
-// Load articles from localStorage on page load
-window.addEventListener('load', function() {
+// Function to display articles (call this on page load for article pages)
+function displayArticles() {
+    const articlesContainer = document.getElementById('content');
     const articles = JSON.parse(localStorage.getItem('articles')) || [];
-    const contentSection = document.getElementById('content');
+    const currentCategory = window.location.pathname.split('/').pop().split('.')[0];
+
+    articlesContainer.innerHTML = ''; // Clear existing content
 
     articles.forEach(article => {
-        const articleHTML = `
-        <div class="article-window">
-            <img src="${article.image}" alt="Article Image">
-            <div class="article-info">
-                <h2>${article.title}</h2>
-                <p class="description">${article.description}</p>
-            </div>
-        </div>
-        `;
-        contentSection.insertAdjacentHTML('beforeend', articleHTML);
+        if (article.category === currentCategory) {
+            const articleElement = document.createElement('div');
+            articleElement.className = 'article-window';
+            articleElement.innerHTML = `
+                <img src="${article.imageSrc}" alt="${article.title}">
+                <div class="article-info">
+                    <h2>${article.title}</h2>
+                    <p class="description">${article.description}</p>
+                </div>
+            `;
+            articlesContainer.appendChild(articleElement);
+        }
     });
-});
+}
+
+// Call displayArticles if we're on an article listing page
+if (document.getElementById('content')) {
+    displayArticles();
+}
+
+// Add event listener for page load to refresh articles
+window.addEventListener('load', displayArticles);

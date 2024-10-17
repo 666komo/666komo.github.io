@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication | KOMO's Dungeon</title>
+    <link rel="stylesheet" href="../styles/nav.css">
+    <link rel="stylesheet" href="../styles/authentication.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Passion+One:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+    <script src="../js/authentication.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="auth-container">
+            <h2>Authentication</h2>
+            <form id="auth-form">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="#" id="register-link">Register</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 KOMO's Dungeon. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById('auth-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Assuming authentication is successful
+            window.location.href = '../_subpages/addarticle.html';
+        });
+    </script>
+</body>
+</html>
