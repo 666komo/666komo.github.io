@@ -3,9 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home | KOMO's Dungeon</title>
-        <link rel="stylesheet" href="styles/nav.css">
-        <link rel="stylesheet" href="styles/index.css">
+        <title>Games | KOMO's Dungeon</title>
+        <link rel="stylesheet" href="../styles/nav.css">
+        <link rel="stylesheet" href="../styles/articles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
@@ -19,28 +19,21 @@
     <!-- Include Navbar Section -->
     <div id="nav-placeholder"></div>
     <script>
-        fetch('_subpages/nav.html')
+        fetch('../_subpages/nav.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('nav-placeholder').innerHTML = data;
             });
     </script>
 
-    <!-- Content Section -->
+    <!-- Articles Section -->
     <section id="content">
-        <div id="mainbox">
-            <h1>Welcome to my dungeon!</h1>
-            <p>
-                This website is supposed to be my cheatsheet only for me.<br>
-                So the fact that it's released to the public is pretty much pointless.<br>
-                I'm broke.<br><br>
-                Anyway, because I'm broke, this website is entirely hosted on GitHub.<br>
-                Link is below.
-            </p>
-            <a href="https://github.com/666komo/666komo.github.io" class="li">GitHub</a>
-            <p>
-                Every fucking thing on this website is "Work in progress", don't be naive.
-            </p>
+        <div class="article-window">
+            <img src="assets/article1.jpg" alt="Article Image">
+            <div class="article-info">
+                <h2>Article 1</h2>
+                <p class="description">This is a summary of the first article. It's just a placeholder for now.</p>
+            </div>
         </div>
     </section>
 </body>
