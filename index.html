@@ -16,27 +16,15 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     </head>
 <body>
-<!-- Navbar Section -->
-<nav id="navbar">
-    <div id="logo-container">
-        <img src="../assets/download.jpg" alt="Logo" id="logo">
-    </div>
-    <div id="stitle">
-        <h1>KOMO's Dungeon</h1>
-    </div>
-    <div class="dropdown">
-        <button class="dropbtn">Menu</button>
-        <div class="dropdown-content">
-            <a href="../index.html">Home</a>
-            <a href="../_linux/linux.html">Linux</a>
-            <a href="../_windows/windows.html">Windows</a>
-            <a href="../_android/android.html">Android</a>
-            <a href="../_games/games.html">Games</a>
-        </div>
-    </div>
-    <!-- Back Button -->
-    <button id="back-btn" onclick="window.history.back()">Back</button>
-</nav>
+    <!-- Include Navbar Section -->
+    <div id="nav-placeholder"></div>
+    <script>
+        fetch('_subpages/nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+            });
+    </script>
 
     <!-- Content Section -->
     <section id="content">

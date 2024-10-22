@@ -1,13 +1,15 @@
+@import url('colors.css');
+
 /* General page styling */
 :root {
     font-family: "SF Pro Display", sans-serif;
     font-weight: 300;
     font-style: normal;
-    color: #fff;
+    color: var(--primary-100);
 }
 
 body {
-    background-color: #14171c;
+    background-color: var(--primary-bg);
     margin: 0;
     padding: 0;
     transition: all 0.3s ease;
@@ -17,7 +19,7 @@ body {
 #content {
     margin-left: 220px; /* Matches the navbar width */
     padding: 10px;
-    background-color: #1c2129;
+    background-color: var(--primary-bg);
     min-height: 100vh; /* Ensure content fills at least the full height */
     box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.8);
     display: flex;
@@ -27,7 +29,7 @@ body {
 
 /* Main content box */
 #mainbox {
-    background-color: #2b303b;
+    background-color: var(--primary-bg);
     border-radius: 10px;
     padding: 20px;
     box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.8);
@@ -40,6 +42,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
     transition: box-shadow 0.3s ease;
+    border: 2px solid var(--primary-500);
 }
 
 #mainbox:hover {
@@ -48,21 +51,19 @@ body {
 
 h1 {
     font-size: 2.5rem;
-    color: white;
+    color: var(--primary-300);
 }
 
 p {
     font-size: 1.1rem;
-    color: #fff;
+    color: var(--primary-100);
     line-height: 1.6;
 }
 
-
-
 a.li {
     display: inline-block;
-    background-color: #434549;
-    color: white;
+    background-color: var(--primary-600);
+    color: var(--primary-100);
     text-decoration: none;
     padding: 12px;
     border-radius: 10px;
@@ -70,7 +71,7 @@ a.li {
 }
 
 a.li:hover {
-    background-color: #575757;
+    background-color: var(--primary-500);
     transform: scale(1.05);
 }
 

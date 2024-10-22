@@ -14,19 +14,30 @@ body {
     background-color: #2b303b;
 }
 
+#usable-area {
+    margin-left: 220px; /* Matches the navbar width */
+    padding: 10px;
+    background-color: var(--primary-bg);
+    min-height: 100vh; /* Ensure content fills at least the full height */
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}   
+
 /* Content Section */
 #content {
-    margin-left: 220px; /* Match the width of the navbar */
     padding: 2vw;
-    background-color: #2b303b;
+    background-color: var(--primary-bg);
     min-height: 100vh;
+    margin: 40px 100px;
     box-shadow: 0 0 2vw rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: calc(100% - 220px); /* Adjust width based on navbar width */
-    max-width: 1200px; /* Reduced max-width for better readability */
+    width: 100%; /* Adjust width based on navbar width */
+    max-width: 1920px; /* Reduced max-width for better readability */
     margin-right: auto;
     transition: all 0.3s ease;
     box-sizing: border-box; /* Include padding in the width calculation */
@@ -77,6 +88,7 @@ code {
     font-size: 0.95em;
     box-shadow: 0 0.4vw 0.6vw rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+    min-width: 600px;
 }
 
 .error-message {
@@ -93,10 +105,15 @@ code {
 /* Responsive design */
 @media (max-width: 768px) {
     #content {
-        margin-left: 0;
+        margin: 0;
+        margin-top: 70px;
         width: 100%;
         padding: 1.5vw;
     }
+
+    #usable-area {
+        margin-left: 0;
+    }   
 
     body {
         padding: 1.5vw;
